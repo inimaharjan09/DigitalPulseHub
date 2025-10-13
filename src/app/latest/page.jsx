@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Latest = () => {
+const LatestPage = () => {
   return (
     <div className="px-12 py-5">
       <div className="mt-5 text-center">
@@ -75,4 +75,4 @@ const Latest = () => {
   );
 };
 
-export default Latest;
+export default LatestPage;

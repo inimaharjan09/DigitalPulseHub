@@ -1,11 +1,11 @@
 'use client';
 import Feature from '@/_components/feature/Feature';
-import Header from '@/_components/header/Header';
-import Latest from '@/_components/latest/Latest';
+import HeaderPage from './header/page';
+import LatestPage from './latest/page';
 import Navbar from '@/_components/navbar/Navbar';
 import React from 'react';
-import AboutPage from './about/page';
-import LearnPage from './learn/page';
+import About from '@/_components/about/About';
+import Learn from '@/_components/learn/Learn';
 import UpdatePage from './updated/page';
 import TransformPage from './transform/page';
 import Footer from '@/_components/footer/Footer';
@@ -13,12 +13,12 @@ import Footer from '@/_components/footer/Footer';
 export default function Home() {
   return (
     <main>
-      <Header />
       <Navbar />
-      <Latest />
+      <HeaderPage />
+      <LatestPage />
       <Feature />
-      <AboutPage />
-      <LearnPage />
+      <About />
+      <Learn />
       <UpdatePage />
       <TransformPage />
       <Footer />

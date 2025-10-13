@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const AboutPage = () => {
+const About = () => {
   const point = [
     'Hands-on learning experiences',
     'Real-world case studies',
@@ -45,4 +45,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;

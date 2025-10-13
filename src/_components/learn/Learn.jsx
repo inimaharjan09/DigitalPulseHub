@@ -14,7 +14,7 @@ const pointData2 = [
   { icon: '/tick.svg', name: 'Real Case Studies' },
   { icon: '/tick.svg', name: '1-on-1 Mentoring' },
 ];
-const LearnPage = () => {
+const Learn = () => {
   return (
     <div className="bg-[#EFF6FF] px-20 py-5 mt-5">
       {/* Header */}
@@ -75,4 +75,4 @@ const LearnPage = () => {
   );
 };
 
-export default LearnPage;
+export default Learn;
