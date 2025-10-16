@@ -8,7 +8,7 @@ const About = () => {
     'Community-driven content',
   ];
   return (
-    <div className=" px-20 py-5">
+    <div className="px-12 py-5">
       <h1 className="font-bold text-[40px] mt-5">About Digital Pulse Hub</h1>
       <div className="grid grid-cols-2 gap-5">
         <div>

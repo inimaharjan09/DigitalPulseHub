@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const LatestPage = () => {
@@ -27,10 +28,12 @@ const LatestPage = () => {
             A comprehensive guide to optimizing your local SEO strategy to
             attract more customers in your area.
           </p>
-          <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1">
-            Read more
-            <Image src="/Vector.svg" alt="vector" width={20} height={20} />
-          </button>
+          <Link href={'/'}>
+            <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1 hover:cursor-pointer">
+              Read more
+              <Image src="/Vector.svg" alt="vector" width={20} height={20} />
+            </button>
+          </Link>
         </card>
         <card className="shadow-[0_0_4px_0_#00000040] rounded-[18px] flex flex-col items-center text-center p-6">
           <Image
@@ -46,10 +49,12 @@ const LatestPage = () => {
             Stay ahead of the curve with the most impactful social media trends
             shaping the digital landscape.
           </p>
-          <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1">
-            Read more
-            <Image src="/Vector.svg" width={20} height={20} alt="vector" />
-          </button>
+          <Link href={'/'}>
+            <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1 hover:cursor-pointer">
+              Read more
+              <Image src="/Vector.svg" width={20} height={20} alt="vector" />
+            </button>
+          </Link>
         </card>
         <card className="shadow-[0_0_4px_0_#00000040] rounded-[18px] flex flex-col items-center text-center p-6">
           <Image
@@ -65,10 +70,12 @@ const LatestPage = () => {
             Automate your email campaigns to nurture leads and drive conversions
             more efficiently.
           </p>
-          <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1">
-            Read more
-            <Image src="/Vector.svg" width={20} height={20} alt="vector" />
-          </button>
+          <Link href={`/`}>
+            <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1 hover:cursor-pointer">
+              Read more
+              <Image src="/Vector.svg" width={20} height={20} alt="vector" />
+            </button>
+          </Link>
         </card>
       </div>
     </div>

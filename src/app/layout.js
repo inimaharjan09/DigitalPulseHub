@@ -20,7 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${inter.variable}`}>
+      <body
+        className={`${geistSans.variable} ${inter.variable} bg-white  text-gray-900 dark:bg-gray-900 dark:text-gray-100`}
+      >
         {children}
       </body>
     </html>

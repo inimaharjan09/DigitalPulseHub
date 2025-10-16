@@ -24,7 +24,7 @@ const HeaderPage = () => {
             experts.
           </p>
           <Link href={`/join`}>
-            <button className="text-white border-1 rounded-[10px] py-2 px-4 mt-10">
+            <button className="text-white border-1 rounded-[10px] py-2 px-4 mt-10 hover:cursor-pointer">
               Join Community
             </button>
           </Link>

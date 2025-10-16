@@ -5,8 +5,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-[#1F2937]">
-      <div className="grid grid-cols-3 px-10 py-5 gap-10 ">
+    <div className="bg-[#1F2937] px-12 py-5">
+      <div className="grid grid-cols-3 gap-10 ">
         <div>
           <h1 className="text-[36px] font-bold text-[#2563EB] text-center">
             Digital Pulse Hub
