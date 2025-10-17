@@ -28,7 +28,7 @@ const LatestPage = () => {
             A comprehensive guide to optimizing your local SEO strategy to
             attract more customers in your area.
           </p>
-          <Link href={'/'}>
+          <Link href={'/seo'}>
             <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1 hover:cursor-pointer">
               Read more
               <Image src="/Vector.svg" alt="vector" width={20} height={20} />

@@ -36,7 +36,7 @@ const JoinPage = () => {
         </p>
 
         <div className="grid grid-cols-2 gap-5 mt-10">
-          <card className="bg-[#ffffff] rounded-[18px] px-2 py-6 drop-shadow-[0_0_4px_#00000040]">
+          <div className="bg-[#ffffff] rounded-[18px] px-2 py-6 drop-shadow-[0_0_4px_#00000040]">
             <h1 className="text-[24px] font-semibold mb-5">Why Join?</h1>
             <div className="rounded-[18px] bg-[#E4E8ED] px-8 py-6 space-y-5">
               {card.map((item, index) => (
@@ -60,9 +60,9 @@ const JoinPage = () => {
               height={218.6454098917048}
               alt="peoples"
             ></Image>
-          </card>
+          </div>
 
-          <card className=" bg-[#FFFFFF] rounded-[18px] px-2 py-6 drop-shadow-[0_0_4px_#00000040]">
+          <div className=" bg-[#FFFFFF] rounded-[18px] px-2 py-6 drop-shadow-[0_0_4px_#00000040]">
             <h1 className="text-[24px] font-semibold mb-5">
               Create Your Account
             </h1>
@@ -132,8 +132,7 @@ const JoinPage = () => {
                 <Link href={'/login'}>Login</Link>
               </span>
             </p>
-          </card>
-
+          </div>
           <Footer1 />
         </div>
       </div>
