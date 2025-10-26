@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React from 'react';
 
 const TransformPage = () => {
@@ -18,9 +19,11 @@ const TransformPage = () => {
           grow their businesses and advance their careers.
         </p>
         <div className="flex items-center justify-center p-10 mt-10 gap-5">
-          <button className="rounded-[10px] px-5 py-3 bg-[#F59E0B]">
-            Read more
-          </button>
+          <Link href="/insights">
+            <button className="rounded-[10px] px-5 py-3 bg-[#F59E0B]">
+              Read more
+            </button>
+          </Link>
           <button className="border px-5 py-3 rounded-[10px] text-[#FFFFFF]">
             Write for us
           </button>
