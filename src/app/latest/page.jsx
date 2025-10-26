@@ -49,7 +49,7 @@ const LatestPage = () => {
             Stay ahead of the curve with the most impactful social media trends
             shaping the digital landscape.
           </p>
-          <Link href={'/'}>
+          <Link href={'/trends'}>
             <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1 hover:cursor-pointer">
               Read more
               <Image src="/Vector.svg" width={20} height={20} alt="vector" />
@@ -70,7 +70,7 @@ const LatestPage = () => {
             Automate your email campaigns to nurture leads and drive conversions
             more efficiently.
           </p>
-          <Link href={`/`}>
+          <Link href={`/automation`}>
             <button className="mt-5 px-4 py-2 text-[#2C40F1] flex gap-1 hover:cursor-pointer">
               Read more
               <Image src="/Vector.svg" width={20} height={20} alt="vector" />

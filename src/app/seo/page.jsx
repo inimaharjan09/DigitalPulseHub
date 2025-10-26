@@ -3,7 +3,7 @@ import React from 'react';
 
 const SEOPage = () => {
   return (
-    <div className=" bg-[#F5F5F5]">
+    <div className="bg-[#F5F5F5]">
       <div className="px-15 py-10 grid grid-cols-2 gap-5">
         <div>
           <h1 className="text-[48px] font-semibold">
@@ -46,9 +46,124 @@ const SEOPage = () => {
           </p>
         </div>
       </div>
-      <div>
-        <h1>Step-by-Step Optimization Guide</h1>
-        <div className="grid grid-cols-2 grid-rows-3"></div>
+      <div className="px-4 py-3">
+        <div className="px-3 bg-[#FFFFFF]">
+          <h1 className="text-[40px] font-semibold">
+            Step-by-Step Optimization Guide
+          </h1>
+          <div className="grid grid-cols-2 grid-rows-3 px-20 py-15 gap-5">
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">
+                Optimize Google Business Profile
+              </h1>
+              <p className="text-[20px] text-[#4B5563]">
+                Claim,verify and complete every field.Add
+                categories,services,photos and accurate hours.
+              </p>
+            </div>
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">
+                Build Quality Reviews
+              </h1>
+              <p className="text-[20px] text-[#4B5563]">
+                Request reviews after purchases and respond professionally to
+                every review you receive.
+              </p>
+            </div>
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">Local Citations</h1>
+              <p className="text-[20px] text-[#4B5563]">
+                Ensure consistent NAP(Name,Address,Phone)across directories and
+                social profiles.
+              </p>
+            </div>
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">Location Pages</h1>
+              <p className="text-[20px] text-[#4B5563]">
+                Create pages for each location with unique content,embedded map
+                and driving directions.
+              </p>
+            </div>
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">On-Page SEO</h1>
+              <p className="text-[20px] text-[#4B5563]">
+                Target local keywords in titles and Meta descriptions.Add schema
+                for LocalBusinesses.
+              </p>
+            </div>
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">Proximity Signals</h1>
+              <p className="text-[20px] text-[#4B5563]">
+                Embed a map,include neighbourhood terms and publish local events
+                or community posts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="px-4 py-3">
+        <div className="bg-[#FFFFFF] px-3">
+          <h1 className="text-[40px] font-semibold">Tools & Resources</h1>
+          <div className="grid grid-cols-2 px-20 py-15 gap-5">
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">Google Analytics</h1>
+              <p className="tex-[20px] text-[#4B5563]">
+                Measure traffic,conversions,and local landing page performance.
+              </p>
+            </div>
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">
+                Google Search Console
+              </h1>
+              <p className="tex-[20px] text-[#4B5563]">
+                Track queries,impressions,and fix index coverage for local
+                pages.
+              </p>
+            </div>
+            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <h1 className="text-[20px] font-semibold">
+                Google Business Profile
+              </h1>
+              <p className="tex-[20px] text-[#4B5563]">
+                Manage your listing,posts,reviews and Q&A from one dashboard.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="px-4 py-3">
+        <div className="bg-[#ffffff] p-5">
+          <h1 className="text-[40px] font-semibold">
+            Conclusion & Key Takeaways
+          </h1>
+          <ul className="px-5 py-3 text-[#4B5563]">
+            <li>
+              Complete and maintain your Google Business Profile to win map pack
+              visibility.
+            </li>
+            <li>
+              Consistency of NAP and reviews directly influences local rankings
+              and trust.
+            </li>
+            <li>
+              Publish localized content and events to strengthen proximity and
+              relevance.
+            </li>
+            <li>
+              Measure results with Analytics and Search Console,then iterate
+              monthly.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="bg-[]">
+        <h1 className="text-[40px] font-semibold">
+          Want to grow your business with SEO?
+        </h1>
+        <p className="text-[#4B5563]">Get Free SEO Guide</p>
+        <button className="bg-[#3B53E9] rounded-[18px] px-3">
+          Download Now
+        </button>
       </div>
     </div>
   );
