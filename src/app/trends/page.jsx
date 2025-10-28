@@ -2,80 +2,151 @@ import React from 'react';
 
 const TrendsPage = () => {
   return (
-    <div>
-      <nav></nav>
-      <div className="grid grid-cols-2">
+    <div className="bg-[#F5F5F5]">
+      {/* Header */}
+      <header className="flex justify-between items-center p-6">
+        <h1 className="font-bold text-[24px]">Trendscope</h1>
+        <nav className="space-x-6 text-[24px]">
+          <a href="#" className="hover:text-blue-600">
+            Articles
+          </a>
+          <a href="#" className="hover:text-blue-600">
+            Guides
+          </a>
+          <a href="#" className="hover:text-blue-600">
+            Newsletter
+          </a>
+        </nav>
+      </header>
+      <hr className="border-0 h-[1px] bg-[#ADAEBC]" />
+
+      {/* Hero Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
         <div>
-          <h1 className="text-[48px] font-semibold">
-            Socail Media Trends You Can't Ignore
-          </h1>
+          <h2 className="text-[48px] md:text-5xl font-semibold mb-6">
+            Social Media Trends You Can't Ignore
+          </h2>
           <p className="text-[24px] text-[#4B5563]">
             Stay ahead with concise insights on social trends—from short-form
             videos to creator-led commerce—and learn how they boost your brand's
             reach and engagement.
           </p>
         </div>
-        <div></div>
+
+        <div className="border-[1px] border-[#ADAEBC] rounded-[30px] p-6">
+          <h3 className="text-[24px] border-[1px] border-[#ADAEBC] rounded-[30px] px-4 py-2 mb-4">
+            Trending Now
+          </h3>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="border-[1px] rounded-[30px] border-[#ADAEBC] h-[198px] w-[263px] p-4">
+              <div className="border-[1px] rounded-[30px] border-[#ADAEBC] h-[93px] w-[227px] flex justify-center items-center">
+                <span className="bg-[#D9E8FB] px-2 py-[2px] rounded-[18px] text-[9px] w-[81px] inline-flex justify-center items-center">
+                  Short Clips
+                </span>
+              </div>
+
+              <p className="text-[12px] font-semibold mt-5">
+                Short-Form Videos
+              </p>
+              <p className="text-[12px] text-[#ADAEBC]">+24% Watch Time</p>
+            </div>
+
+            <div className="border-[1px] border-[#ADAEBC] rounded-[30px] h-[198px] w-[263px] p-4">
+              <div className="border-[1px] border-[#ADAEBC] rounded-[30px] h-[93px] w-[227px] flex justify-center items-center">
+                <span className="bg-[#D9E8FB] px-2 py-[2px] rounded-[18px] text-[9px] w-[81px] inline-flex justify-center items-center">
+                  Collab
+                </span>
+              </div>
+
+              <p className="text-[12px] font-semibold mt-5">
+                Influencer Collabs
+              </p>
+              <p className="text-[12px] text-[#ADAEBC]">CTR 1.8x</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <hr />
-      <div>
-        <div>
-          <h1 className="text-[40px] font-semibold">Introduction</h1>
-          <p className="text-[#4B5563] text-[24px]">
-            Social Media evolves at breakneck speed.Understanding the most
-            impactful shifts helps teams plan smarter content,partnerships and
-            campaigns.Below we outline the key movements redefining how
-            audiences discover,engage and buy.
+
+      <hr className="my-8" />
+
+      {/* Introduction */}
+      <div className="px-8 mb-10 ">
+        <div className="bg-[#FFFFFF] px-3">
+          <h1 className="text-[40px] font-semibold mb-3">Introduction</h1>
+          <p className="text-[#4B5563] text-[18px]">
+            Social Media evolves at breakneck speed. Understanding the most
+            impactful shifts helps teams plan smarter content, partnerships, and
+            campaigns. Below we outline the key movements redefining how
+            audiences discover, engage, and buy.
           </p>
         </div>
       </div>
-      <div>
-        <h1 className="text-[40px] font-semibold">Top Trends</h1>
-        <div className="grid grid-cols-2">
-          <div>
-            <h1 className="text-[24px] font-semibold">Short-Form Videos</h1>
+
+      {/* Top Trends */}
+      <div className="mb-10">
+        <h1 className="text-[40px] font-semibold px-5 mb-6">Top Trends</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 px-2 gap-6">
+          <div className="border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]">
+            <h2 className="text-[24px] font-semibold text-center">
+              Short-Form Videos
+            </h2>
             <p className="text-[16px] text-[#4B5563]">
-              Bite-sized vertical clips dominate attention,driving discovery and
-              repeat engagement across platforms.
+              Bite-sized vertical clips dominate attention, driving discovery
+              and repeat engagement across platforms.
             </p>
           </div>
-          <div>
-            <h1 className="text-[24px] font-semibold">
+          <div className="border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]">
+            <h2 className="text-[24px] font-semibold">
               Influencer Collaborations
-            </h1>
+            </h2>
             <p className="text-[16px] text-[#4B5563]">
-              Brand team up with niche creators for authentic storytelling and
+              Brands team up with niche creators for authentic storytelling and
               measurable conversions.
             </p>
           </div>
-          <div>
-            <h1 className="text-[24px] font-semibold">Social Commerce</h1>
+          <div className="md:col-span-2 border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]">
+            <h2 className="text-[24px] font-semibold">Social Commerce</h2>
             <p className="text-[16px] text-[#4B5563]">
-              Seamless in app shopping experiences reduce friction from
+              Seamless in-app shopping experiences reduce friction from
               discovery to checkout.
             </p>
           </div>
         </div>
       </div>
-      <div>
-        <h1 className="text-center text-[40px] font-semibold">
+
+      {/* CTA */}
+      <div className="text-center p-10 bg-[#FFFFFF] rounded-[18px] mx-8">
+        <h1 className="text-[32px] font-semibold mb-4">
           Want more social media insights?
         </h1>
-        <button className="bg-[#3B53E9] rounded-[18px]">
+        <button className="bg-[#3B53E9] hover:bg-blue-700 text-white rounded-[18px] px-6 py-2">
           Subscribe for updates
         </button>
       </div>
-      <div>
-        <h1 className="text-[40px] font-semibold">Related Articles</h1>
-        <h2 className="text-[24px] font-semibold">
-          How to Build a Creator-Led Launch Plan
-        </h2>
-        <h2 className="text-[24px] font-semibold">
-          Optimizing Short-Form clips for Retention
-        </h2>
-        <h2 className="text-[24px] font-semibold">
-          Turning Views into Sales In-App Shops
-        </h2>
+
+      {/* Related Articles */}
+      <div className="p-8">
+        <h1 className="text-[40px] font-semibold mb-4">Related Articles</h1>
+        <div className="border border-gray-300 rounded-[18px] p-4 flex justify-between items-center mt-10">
+          <span className="font-semibold text-[24px]">
+            How to Build a Creator-Led Launch Plan
+          </span>
+          <span className="text-[#ADAEBC] text-[16px]">7 min read</span>
+        </div>
+
+        <div className="border border-gray-300 rounded-[18px] p-4 flex justify-between items-center mt-10">
+          <span className="font-semibold text-[24px]">
+            Optimizing Short-Form Clips for Retention
+          </span>
+          <span className="text-[#ADAEBC] text-[16px]">5 min read</span>
+        </div>
+
+        <div className="border border-gray-300 rounded-[18px] p-4 flex justify-between items-center mt-10">
+          <span className="font-semibold text-[24px]">
+            Turning Views into Sales In-App Shops
+          </span>
+          <span className="text-[#ADAEBC] text-[16px]">6 min read</span>
+        </div>
       </div>
     </div>
   );

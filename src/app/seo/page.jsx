@@ -4,16 +4,16 @@ import React from 'react';
 const SEOPage = () => {
   return (
     <div className="bg-[#F5F5F5]">
-      <div className="px-15 py-10 grid grid-cols-2 gap-5">
+      <div className="px-8 py-3 grid grid-cols-2 gap-5">
         <div>
           <h1 className="text-[48px] font-semibold">
             Mastering SEO for Local Businesses
           </h1>
-          <p className="text-[#4B5563] text-[24px]">
+          <p className="text-[#4B5563] text-[24px] mt-10">
             Practical strategies to rank higher in local search,attract nearby
             customers and turn online traffic into in-store visits.
           </p>
-          <div className="flex px-3 py-2 gap-3 mt-5">
+          <div className="flex px-3 py-2 gap-3 mt-15">
             <span className="flex justify-center items-center gap-2 text-[11px]  rounded-[18px] px-2 bg-[#C6E8FF] ">
               <Image
                 src="/calendar.svg"
@@ -30,7 +30,7 @@ const SEOPage = () => {
             By James
           </span>
         </div>
-        <div className="">
+        <div className="flex justify-center items-center mt-[50px]">
           <Image src="/seo.svg" width={488} height={326} alt="seo" />
         </div>
       </div>
@@ -51,8 +51,9 @@ const SEOPage = () => {
           <h1 className="text-[40px] font-semibold">
             Step-by-Step Optimization Guide
           </h1>
-          <div className="grid grid-cols-2 grid-rows-3 px-20 py-15 gap-5">
+          <div className="grid grid-cols-2 px-20 py-15 gap-5">
             <div className="bg-[#EFF6FF] rounded-[18px] p-5">
+              <Image src="/location.svg" width={20} height={20} alt="check" />
               <h1 className="text-[20px] font-semibold">
                 Optimize Google Business Profile
               </h1>
@@ -136,7 +137,7 @@ const SEOPage = () => {
           <h1 className="text-[40px] font-semibold">
             Conclusion & Key Takeaways
           </h1>
-          <ul className="px-5 py-3 text-[#4B5563]">
+          <ul>
             <li>
               Complete and maintain your Google Business Profile to win map pack
               visibility.
@@ -150,20 +151,30 @@ const SEOPage = () => {
               relevance.
             </li>
             <li>
-              Measure results with Analytics and Search Console,then iterate
+              Measure results with Analytics and Search Console, then iterate
               monthly.
             </li>
           </ul>
         </div>
       </div>
-      <div className="bg-[]">
-        <h1 className="text-[40px] font-semibold">
-          Want to grow your business with SEO?
-        </h1>
-        <p className="text-[#4B5563]">Get Free SEO Guide</p>
-        <button className="bg-[#3B53E9] rounded-[18px] px-3">
-          Download Now
-        </button>
+      <div className="px-4 py-3">
+        <div className="bg-[#ffffff] p-5">
+          <h1 className="text-[40px] font-semibold">
+            Want to grow your business with SEO?
+          </h1>
+          <p className="text-[#4B5563]">Get Free SEO Guide</p>
+          <div className="flex justify-end gap-3">
+            <button className="flex items-center gap-2 bg-[#3B53E9] rounded-[18px] px-6 py-2 text-white">
+              <Image
+                src="/download.svg"
+                width={20}
+                height={20}
+                alt="download"
+              />
+              <span>Download Now</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
