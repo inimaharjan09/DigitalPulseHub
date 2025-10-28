@@ -3,17 +3,15 @@ import React from 'react';
 
 const AutomationPage = () => {
   return (
-    <div>
+    <div className="bg-[#F5F5F5]">
       {/* Header */}
-      <header className="flex justify-between items-center p-6 border-b border-gray-200">
-        <h1 className="font-semibold text-lg">Marketing Guide</h1>
-        <a
-          href="#"
-          className="text-blue-600 hover:underline font-medium text-sm"
-        >
+      <header className="flex justify-between items-center p-6">
+        <h1 className="font-bold text-[24px]">Marketing Guide</h1>
+        <a href="#" className="text-[#2C40F1] hover:underline text-[24px]">
           Download
         </a>
       </header>
+      <hr className="border-0 h-[1px] bg-[#ADAEBC]" />
 
       {/* Hero Section */}
       <div className="flex flex-col justify-center items-center text-center p-8 space-y-4">
@@ -61,11 +59,11 @@ const AutomationPage = () => {
             <div className="space-y-2 text-sm">
               <div className="flex justify-between border-b border-gray-200 pb-1">
                 <p>Typical Open Rate</p>
-                <p className="font-medium text-gray-700">34–48%</p>
+                <p className="font-medium text-gray-700">34-48%</p>
               </div>
               <div className="flex justify-between border-b border-gray-200 pb-1">
                 <p>CTR on drips</p>
-                <p className="font-medium text-gray-700">5–8%</p>
+                <p className="font-medium text-gray-700">5-8%</p>
               </div>
               <div className="flex justify-between">
                 <p>Time to first email</p>
@@ -77,7 +75,7 @@ const AutomationPage = () => {
       </div>
 
       {/* Introduction */}
-      <div className="px-6 py-10">
+      <div className="px-6 bg-[#ffffff]">
         <h1 className="text-[40px] font-semibold mb-2">Introduction</h1>
         <p className="text-[24px] text-[#4B5563]">
           Email automation uses triggers and personalization to send the right
