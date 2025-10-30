@@ -1,9 +1,72 @@
+import { ChevronLeft } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
+const optimazationGuide = [
+  {
+    icon: '/location.svg',
+    heading: 'Optimize Google Business Profile',
+    content:
+      'Claim,verify and complete every field.Add categories,services,photos and accurate hours.',
+  },
+  {
+    icon: '/starblue.svg',
+    heading: 'Build Quality Reviews',
+    content:
+      'Request reviews after purchases and respond professionally to every review you receive.',
+  },
+  {
+    icon: '/link.svg',
+    heading: 'Local Citations',
+    content:
+      'Ensure consistent NAP(Name,Address,Phone)across directories and social profiles.  ',
+  },
+  {
+    icon: '/copy.svg',
+    heading: 'Location Pages',
+    content:
+      'Create pages for each location with unique content,embedded map and driving directions. ',
+  },
+  {
+    icon: '/search.svg',
+    heading: 'On-Page SEO',
+    content:
+      'Target local keywords in titles and Meta descriptions.Add schema for LocalBusinesses.',
+  },
+  {
+    icon: '/groupf.svg',
+    heading: 'Proximity Signals',
+    content:
+      'Embed a map,include neighbourhood terms and publish local events or community posts. ',
+  },
+];
+
+const tools = [
+  {
+    icons: '/Group93.svg',
+    title: 'Google Analytics',
+    paragraph:
+      'Measure traffic,conversions,and local landing page performance.',
+  },
+  {
+    icons: '/Group132.svg',
+    title: 'Google Search Console',
+    paragraph:
+      'Track queries,impressions,and fix index coverage for local pages.',
+  },
+  {
+    icons: '/Group134.svg',
+    title: 'Google Business Profile',
+    paragraph: 'Manage your listing,posts,reviews and Q&A from one dashboard.',
+  },
+];
 const SEOPage = () => {
   return (
     <div className="bg-[#F5F5F5]">
+      <Link href={'/latest'}>
+        <ChevronLeft size={30} />
+      </Link>
       <div className="px-8 py-3 grid grid-cols-2 gap-5">
         <div>
           <h1 className="text-[48px] font-semibold">
@@ -52,53 +115,27 @@ const SEOPage = () => {
             Step-by-Step Optimization Guide
           </h1>
           <div className="grid grid-cols-2 px-20 py-15 gap-5">
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <Image src="/location.svg" width={20} height={20} alt="check" />
-              <h1 className="text-[20px] font-semibold">
-                Optimize Google Business Profile
-              </h1>
-              <p className="text-[20px] text-[#4B5563]">
-                Claim,verify and complete every field.Add
-                categories,services,photos and accurate hours.
-              </p>
-            </div>
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <h1 className="text-[20px] font-semibold">
-                Build Quality Reviews
-              </h1>
-              <p className="text-[20px] text-[#4B5563]">
-                Request reviews after purchases and respond professionally to
-                every review you receive.
-              </p>
-            </div>
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <h1 className="text-[20px] font-semibold">Local Citations</h1>
-              <p className="text-[20px] text-[#4B5563]">
-                Ensure consistent NAP(Name,Address,Phone)across directories and
-                social profiles.
-              </p>
-            </div>
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <h1 className="text-[20px] font-semibold">Location Pages</h1>
-              <p className="text-[20px] text-[#4B5563]">
-                Create pages for each location with unique content,embedded map
-                and driving directions.
-              </p>
-            </div>
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <h1 className="text-[20px] font-semibold">On-Page SEO</h1>
-              <p className="text-[20px] text-[#4B5563]">
-                Target local keywords in titles and Meta descriptions.Add schema
-                for LocalBusinesses.
-              </p>
-            </div>
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <h1 className="text-[20px] font-semibold">Proximity Signals</h1>
-              <p className="text-[20px] text-[#4B5563]">
-                Embed a map,include neighbourhood terms and publish local events
-                or community posts.
-              </p>
-            </div>
+            {optimazationGuide.map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#EFF6FF] rounded-[18px] p-5 flex gap-10 items-start"
+              >
+                <div className=" rounded-lg flex items-center justify-center">
+                  <Image
+                    src={item.icon}
+                    width={35}
+                    height={25.454545974731445}
+                    alt="check"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h1 className="text-[20px] font-semibold mb-2">
+                    {item.heading}
+                  </h1>
+                  <p className="text-[20px] text-[#4B5563]">{item.content}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -106,29 +143,25 @@ const SEOPage = () => {
         <div className="bg-[#FFFFFF] px-3">
           <h1 className="text-[40px] font-semibold">Tools & Resources</h1>
           <div className="grid grid-cols-2 px-20 py-15 gap-5">
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <h1 className="text-[20px] font-semibold">Google Analytics</h1>
-              <p className="tex-[20px] text-[#4B5563]">
-                Measure traffic,conversions,and local landing page performance.
-              </p>
-            </div>
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <h1 className="text-[20px] font-semibold">
-                Google Search Console
-              </h1>
-              <p className="tex-[20px] text-[#4B5563]">
-                Track queries,impressions,and fix index coverage for local
-                pages.
-              </p>
-            </div>
-            <div className="bg-[#EFF6FF] rounded-[18px] p-5">
-              <h1 className="text-[20px] font-semibold">
-                Google Business Profile
-              </h1>
-              <p className="tex-[20px] text-[#4B5563]">
-                Manage your listing,posts,reviews and Q&A from one dashboard.
-              </p>
-            </div>
+            {tools.map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#EFF6FF] rounded-[18px] p-5 flex gap-10 items-start"
+              >
+                <div className=" rounded-lg flex items-center justify-center">
+                  <Image
+                    src={item.icons}
+                    width={35}
+                    height={25.454545974731445}
+                  />
+                </div>
+                <div className="flex-1">
+                  {' '}
+                  <h1 className="text-[20px] font-semibold">{item.title}</h1>
+                  <p className="tex-[20px] text-[#4B5563]">{item.paragraph}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

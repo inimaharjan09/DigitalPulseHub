@@ -1,4 +1,27 @@
+import Image from 'next/image';
 import React from 'react';
+const trend = [
+  {
+    icon: '/79.svg',
+    heading: 'Short-Form Videos',
+    content:
+      'Bite-sized vertical clips dominate attention, driving discovery and repeat engagement across platforms.',
+  },
+  {
+    icon: '/81.svg',
+    heading: 'Influencer Collaborations',
+    content:
+      'Brands team up with niche creators for authentic storytelling and measurable conversions.',
+  },
+];
+const trends = [
+  {
+    icons: '/80.svg',
+    title: 'Social Commerce',
+    paragraph:
+      'Seamless in-app shopping experiences reduce friction from discovery to checkout.',
+  },
+];
 
 const TrendsPage = () => {
   return (
@@ -86,31 +109,37 @@ const TrendsPage = () => {
       <div className="mb-10">
         <h1 className="text-[40px] font-semibold px-5 mb-6">Top Trends</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 px-2 gap-6">
-          <div className="border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]">
-            <h2 className="text-[24px] font-semibold text-center">
-              Short-Form Videos
-            </h2>
-            <p className="text-[16px] text-[#4B5563]">
-              Bite-sized vertical clips dominate attention, driving discovery
-              and repeat engagement across platforms.
-            </p>
-          </div>
-          <div className="border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]">
-            <h2 className="text-[24px] font-semibold">
-              Influencer Collaborations
-            </h2>
-            <p className="text-[16px] text-[#4B5563]">
-              Brands team up with niche creators for authentic storytelling and
-              measurable conversions.
-            </p>
-          </div>
-          <div className="md:col-span-2 border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]">
-            <h2 className="text-[24px] font-semibold">Social Commerce</h2>
-            <p className="text-[16px] text-[#4B5563]">
-              Seamless in-app shopping experiences reduce friction from
-              discovery to checkout.
-            </p>
-          </div>
+          {trend.map((item, index) => (
+            <div
+              key={index}
+              className="border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]"
+            >
+              <div>
+                <Image src={item.icon} alt="" width={30} height={54} />
+              </div>
+              <div>
+                <h2 className="text-[24px] font-semibold text-center">
+                  {item.heading}
+                </h2>
+                <p className="text-[16px] text-[#4B5563]">{item.content}</p>
+              </div>
+            </div>
+          ))}
+
+          {trends.map((item, index) => (
+            <div
+              key={index}
+              className="md:col-span-2 border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]"
+            >
+              <div>
+                <Image src={item.icons} alt="" width={55} height={51} />
+              </div>
+              <div>
+                <h2 className="text-[24px] font-semibold">{item.title}</h2>
+                <p className="text-[16px] text-[#4B5563]">{item.paragraph}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
