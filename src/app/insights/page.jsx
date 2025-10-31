@@ -73,30 +73,20 @@ const InsightPage = () => {
                 src="/template.svg"
                 width={10}
                 height={10}
-                alt="Template Kits Icon"
+                alt="Template"
               />
               <span className="text-[10px] font-semibold">Template Kits</span>
             </button>
 
             {/* Batch Planner */}
             <button className="flex items-center gap-2 bg-black text-white font-semibold rounded-[18px] px-5 py-3">
-              <Image
-                src="/batch.svg"
-                width={10}
-                height={10}
-                alt="Batch Planner Icon"
-              />
+              <Image src="/batch.svg" width={10} height={10} alt="Batch" />
               <span className="text-[10px] font-semibold">Batch Planner</span>
             </button>
 
             {/* Focus Mode */}
             <button className="flex items-center gap-2 bg-black text-white font-semibold rounded-[18px] px-5 py-3">
-              <Image
-                src="/focus.svg"
-                width={10}
-                height={10}
-                alt="Focus Mode Icon"
-              />
+              <Image src="/focus.svg" width={10} height={10} alt="Focus" />
               <span className="text-[10px] font-semibold">Focus Mode</span>
             </button>
           </div>
