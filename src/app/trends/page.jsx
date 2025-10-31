@@ -89,7 +89,6 @@ const TrendsPage = () => {
           </div>
         </div>
       </div>
-
       <hr className="my-8" />
 
       {/* Introduction */}
@@ -112,12 +111,17 @@ const TrendsPage = () => {
           {trend.map((item, index) => (
             <div
               key={index}
-              className="border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]"
+              className="border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF] p-5 flex gap-10 items-start"
             >
-              <div>
-                <Image src={item.icon} alt="" width={30} height={54} />
+              <div className="flex items-center justify-center">
+                <Image
+                  src={item.icon}
+                  alt={item.heading}
+                  width={30}
+                  height={54}
+                />
               </div>
-              <div>
+              <div className="flex-1">
                 <h2 className="text-[24px] font-semibold text-center">
                   {item.heading}
                 </h2>
@@ -129,13 +133,20 @@ const TrendsPage = () => {
           {trends.map((item, index) => (
             <div
               key={index}
-              className="md:col-span-2 border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF]"
+              className="md:col-span-2 border-[1px] border-[#D9D9D9] rounded-[18px] px-3 bg-[#EFF6FF] flex gap-10 items-start p-5"
             >
-              <div>
-                <Image src={item.icons} alt="" width={55} height={51} />
+              <div className="flex items-center justify-center">
+                <Image
+                  src={item.icons}
+                  alt={item.title}
+                  width={55}
+                  height={51}
+                />
               </div>
-              <div>
-                <h2 className="text-[24px] font-semibold">{item.title}</h2>
+              <div className="flex-1">
+                <h2 className="text-[24px] font-semibold text-center">
+                  {item.title}
+                </h2>
                 <p className="text-[16px] text-[#4B5563]">{item.paragraph}</p>
               </div>
             </div>
